@@ -1,6 +1,6 @@
 #include "Quaternion.h"
-#include "math.h"
-//(??, (?? ? ??) ?? + (?? Å~ ??) Å~ ??cos?? + ?? Å~ ?? sin ??)
+#include <math.h>
+//(??, (?? ? ??) ?? + (?? ¬Å~ ??) ¬Å~ ??cos?? + ?? ¬Å~ ?? sin ??)
 Quaternion Quaternion::Slerp(Vector3 x1, Vector3 x2, float t)
 {
 	Quaternion q = Quaternion();
@@ -17,8 +17,8 @@ Quaternion Quaternion::Slerp(Vector3 x1, Vector3 x2, float t)
 
 Quaternion::Quaternion()
 {
-	x = y = z = 0;
-	w = 1;
+	x = y = z = 0.0f;
+	w = 1.0f;
 }
 
 
