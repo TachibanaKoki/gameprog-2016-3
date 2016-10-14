@@ -13,7 +13,7 @@ float Vector3::DotVector3(const Vector3 vl, const Vector3 vr) {
 	return vl.x * vr.x + vl.y * vr.y + vl.z * vr.z;
 }
 
-float Vector3::Distance() {
+float Vector3::Distance() const {
 	return sqrtf( x * x + y * y + z * z);
 }
 
